@@ -5,27 +5,27 @@ import { Download, Calendar as CalendarIcon } from 'lucide-react';
 export function StagiaireSchedule() {
   const schedule = {
     lundi: [
-      { time: '08:30-10:30', module: 'Programmation Java', formateur: 'Prof. Bennani', salle: 'A201' },
-      { time: '10:45-12:45', module: 'Base de données', formateur: 'Prof. El Amrani', salle: 'A203' },
-      { time: '14:00-16:00', module: 'TP Java', formateur: 'Prof. Bennani', salle: 'Lab 1' },
+      { time: '08:30-10:30', module: 'Programmation Java', formateur: 'Prof. Youssef YAZIDI ALAOUI', salle: 'SDD3' },
+      { time: '10:45-12:45', module: 'Base de données', formateur: 'Prof. Mounia NAAMANY', salle: 'SDD2' },
+      { time: '14:00-16:00', module: 'TP Java', formateur: 'Prof. Youssef YAZIDI ALAOUI', salle: 'SDD3' },
     ],
     mardi: [
-      { time: '08:30-10:30', module: 'Développement Web', formateur: 'Prof. Idrissi', salle: 'A202' },
-      { time: '10:45-12:45', module: 'Anglais technique', formateur: 'Prof. Smith', salle: 'B101' },
-      { time: '14:00-16:00', module: 'TP Web', formateur: 'Prof. Idrissi', salle: 'Lab 2' },
+      { time: '08:30-10:30', module: 'Développement Web', formateur: 'Prof. Bouchra EL AKEL', salle: 'SDD1' },
+      { time: '10:45-12:45', module: 'Anglais technique', formateur: 'Prof. Othmane GUEDDALI', salle: 'SL1' },
+      { time: '14:00-16:00', module: 'TP Web', formateur: 'Prof. Bouchra EL AKEL', salle: 'SDD1' },
     ],
     mercredi: [
-      { time: '08:30-10:30', module: 'Réseaux informatiques', formateur: 'Prof. Alaoui', salle: 'A204' },
-      { time: '10:45-12:45', module: 'Projet', formateur: 'Équipe pédagogique', salle: 'Lab 3' },
+      { time: '08:30-10:30', module: 'Réseaux informatiques', formateur: 'Prof. Anas BOUYBANINE', salle: 'SID1' },
+      { time: '10:45-12:45', module: 'PFE', formateur: 'Équipe pédagogique', salle: 'SDD4' },
     ],
     jeudi: [
-      { time: '08:30-10:30', module: 'Base de données', formateur: 'Prof. El Amrani', salle: 'A203' },
-      { time: '10:45-12:45', module: 'TP Base de données', formateur: 'Prof. El Amrani', salle: 'Lab 1' },
-      { time: '14:00-16:00', module: 'Développement Web', formateur: 'Prof. Idrissi', salle: 'A202' },
+      { time: '08:30-10:30', module: 'Base de données', formateur: 'Prof. Mounia NAAMANY', salle: 'SDD2' },
+      { time: '10:45-12:45', module: 'TP Base de données', formateur: 'Prof. Mounia NAAMANY', salle: 'SDD2' },
+      { time: '14:00-16:00', module: 'Développement Web', formateur: 'Prof. Bouchra EL AKEL', salle: 'SDD1' },
     ],
     vendredi: [
-      { time: '08:30-10:30', module: 'Programmation Java', formateur: 'Prof. Bennani', salle: 'A201' },
-      { time: '10:45-12:45', module: 'Réseaux informatiques', formateur: 'Prof. Alaoui', salle: 'A204' },
+      { time: '08:30-10:30', module: 'Programmation Java', formateur: 'Prof. Youssef YAZIDI ALAOUI', salle: 'SDD3' },
+      { time: '10:45-12:45', module: 'Réseaux informatiques', formateur: 'Prof. Anas BOUYBANINE', salle: 'SID1' },
     ],
   };
 

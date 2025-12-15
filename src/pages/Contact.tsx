@@ -33,7 +33,7 @@ export function Contact() {
                 <Phone className="w-6 h-6 text-[#1E88E5]" />
               </div>
               <h3 className="text-gray-900 dark:text-white mb-2">Téléphone</h3>
-              <p className="text-gray-600 dark:text-gray-400">+212 5XX-XXXXXX</p>
+              <p className="text-gray-600 dark:text-gray-400">+212 539-380871</p>
             </Card>
 
             <Card className="p-6 text-center">
@@ -41,7 +41,7 @@ export function Contact() {
                 <Mail className="w-6 h-6 text-[#00C9A7]" />
               </div>
               <h3 className="text-gray-900 dark:text-white mb-2">Email</h3>
-              <p className="text-gray-600 dark:text-gray-400">contact@ismontic.ma</p>
+              <p className="text-gray-600 dark:text-gray-400">ismontictanger.ofppt@gmail.com</p>
             </Card>
 
             <Card className="p-6 text-center">
@@ -49,7 +49,7 @@ export function Contact() {
                 <MapPin className="w-6 h-6 text-purple-500" />
               </div>
               <h3 className="text-gray-900 dark:text-white mb-2">Adresse</h3>
-              <p className="text-gray-600 dark:text-gray-400">Casablanca, Maroc</p>
+              <p className="text-gray-600 dark:text-gray-400">Av. des Forces Armées Royales, Tanger</p>
             </Card>
           </div>
 
@@ -113,7 +113,7 @@ export function Contact() {
                     <Clock className="w-5 h-5 text-[#1E88E5]" />
                     <div>
                       <p className="text-gray-900 dark:text-white">Lundi - Vendredi</p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">8h30 - 17h00</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">8h30 - 18h30</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -141,8 +141,8 @@ export function Contact() {
                 <div className="mt-4 space-y-2">
                   <p className="text-gray-900 dark:text-white">ISMONTIC</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Boulevard Mohammed V<br />
-                    Casablanca, Maroc
+                    Av. des Forces Armées Royales<br />
+                    Tanger, Maroc
                   </p>
                 </div>
               </Card>

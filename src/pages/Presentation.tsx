@@ -43,7 +43,7 @@ export function Presentation() {
           <Card className="p-8 mb-12">
             <h2 className="text-gray-900 dark:text-white mb-4">Notre Mission</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              L'Institut Spécialisé de Monétique, Informatique et Techniques de Communication (ISMONTIC)
+              L'Institut Spécialisé des Métiers de l'Offshoring et des Nouvelles Technologies de l'Information (ISMONTIC)
               a pour mission de former des techniciens spécialisés hautement qualifiés dans les domaines
               de pointe du secteur numérique.
             </p>

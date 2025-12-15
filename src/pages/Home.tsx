@@ -19,16 +19,16 @@ export function Home() {
       description: 'Spécialisation en administration système, réseaux et sécurité informatique.',
     },
     {
-      title: 'Monétique et Transactions Électroniques',
+      title: 'Infographie',
       duration: '2 ans',
-      description: 'Formation spécialisée en systèmes de paiement électronique et sécurité des transactions.',
+      description: 'Formation spécialisée en communication visuelle, création graphique et maîtrise des outils de PAO pour l\'impression et le digital.',
     },
   ];
 
   const actualites = [
     {
       title: 'Rentrée Académique 2025/2026',
-      date: '15 Mars 2025',
+      date: '06 Septembre 2025',
       description: 'Les inscriptions pour la nouvelle année académique sont maintenant ouvertes.',
       image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2MjQ0NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080',
     },
@@ -55,7 +55,7 @@ export function Home() {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="mb-6 text-white">
-              Institut Spécialisé de Monétique, Informatique et Techniques de Communication
+              Institut Spécialisé dans les Métiers de l'Offshoring et les Nouvelles Technologies de l'Information
             </h1>
             <p className="text-xl mb-8 text-blue-50">
               Formez-vous aux métiers du digital et de la technologie dans un environnement moderne et professionnalisant
@@ -89,9 +89,9 @@ export function Home() {
             <div>
               <h2 className="text-gray-900 dark:text-white mb-6">À propos de l'ISMONTIC</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                L'ISMONTIC est un établissement de formation professionnelle spécialisé dans les domaines de la monétique, 
-                de l'informatique et des techniques de communication. Notre mission est de former des techniciens spécialisés 
-                hautement qualifiés pour répondre aux besoins du marché.
+                L'ISMONTIC est un établissement de formation professionnelle spécialisé dans les métiers de l'offshoring 
+                et des nouvelles technologies de l'information. Notre mission est de préparer les stagiaires à réussir 
+                dans un environnement technologique en constante évolution.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
                 Nous offrons des formations de qualité, encadrées par des professionnels du secteur, 
@@ -117,9 +117,9 @@ export function Home() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHByb2dyYW1taW5nJTIwY29kZXxlbnwxfHx8fDE3NjI0MzUzOTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="ISMONTIC Campus"
-                className="w-full h-full object-cover"
+              src="/unnamed.webp"   
+              alt="ISMONTIC Campus"
+              className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -205,7 +205,7 @@ export function Home() {
                   <div>
                     <p className="text-gray-900 dark:text-white mb-1">Adresse</p>
                     <p className="text-gray-600 dark:text-gray-400">
-                      Boulevard Mohammed V, Casablanca<br />
+                      Av. des Forces Armées Royales, Tanger<br />
                       Maroc
                     </p>
                   </div>
@@ -215,7 +215,7 @@ export function Home() {
                   <div>
                     <p className="text-gray-900 dark:text-white mb-1">Horaires d'accueil</p>
                     <p className="text-gray-600 dark:text-gray-400">
-                      Lundi - Vendredi: 8h30 - 17h00<br />
+                      Lundi - Vendredi: 8h30 - 18h30<br />
                       Samedi: 9h00 - 13h00
                     </p>
                   </div>

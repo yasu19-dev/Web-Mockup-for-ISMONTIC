@@ -18,11 +18,11 @@ export function StagiaireDashboard() {
     module: 'Développement Web Avancé',
     time: '10:00 - 12:00',
     room: 'Salle A203',
-    formateur: 'Prof. El Amrani',
+    formateur: 'Prof. Mounia NAAMANY',
   };
 
   const recentNotes = [
-    { module: 'Programmation Java', note: 16, type: 'Contrôle' },
+    { module: 'Programmation JS', note: 16, type: 'Contrôle' },
     { module: 'Base de données', note: 14.5, type: 'TP' },
     { module: 'Développement Web', note: 17, type: 'Projet' },
   ];

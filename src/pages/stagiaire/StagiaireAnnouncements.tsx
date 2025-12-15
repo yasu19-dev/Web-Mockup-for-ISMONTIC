@@ -32,7 +32,7 @@ export function StagiaireAnnouncements() {
       category: 'E-learning',
       date: '2025-03-04',
       time: '14:00',
-      author: 'Prof. Bennani',
+      author: 'Prof. Youssef YAZIDI ALAOUI',
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export function StagiaireAnnouncements() {
       category: 'Pédagogique',
       date: '2025-03-03',
       time: '09:00',
-      author: 'Prof. Idrissi',
+      author: 'Prof. Bouchra EL AKEL',
     },
     {
       id: 4,
@@ -86,7 +86,7 @@ export function StagiaireAnnouncements() {
       category: 'Pédagogique',
       date: '2025-02-26',
       time: '12:00',
-      author: 'Prof. El Amrani',
+      author: 'Prof. Mounia NAAMANY',
     },
   ];
 

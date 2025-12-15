@@ -139,8 +139,6 @@ export function StagiaireNotes() {
               <SelectContent>
                 <SelectItem value="s1">Semestre 1</SelectItem>
                 <SelectItem value="s2">Semestre 2</SelectItem>
-                <SelectItem value="s3">Semestre 3</SelectItem>
-                <SelectItem value="s4">Semestre 4</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -154,7 +152,7 @@ export function StagiaireNotes() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Tous les modules</SelectItem>
-                <SelectItem value="java">Programmation Java</SelectItem>
+                <SelectItem value="java">Programmation JavaScript</SelectItem>
                 <SelectItem value="db">Base de données</SelectItem>
                 <SelectItem value="web">Développement Web</SelectItem>
                 <SelectItem value="network">Réseaux informatiques</SelectItem>

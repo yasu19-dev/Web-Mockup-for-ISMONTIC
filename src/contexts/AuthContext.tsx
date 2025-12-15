@@ -25,7 +25,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     // Simulation de connexion
     const mockUser: User = {
       id: '1',
-      name: role === 'stagiaire' ? 'Ahmed Bennani' : role === 'formateur' ? 'Prof. Samira El Amrani' : 'Admin ISMONTIC',
+      name: role === 'stagiaire' ? 'Zaid SAOUSAOU' : role === 'formateur' ? 'Prof. Bouchra EL AKEL' : 'Admin ISMONTIC',
       email,
       role: role!,
     };

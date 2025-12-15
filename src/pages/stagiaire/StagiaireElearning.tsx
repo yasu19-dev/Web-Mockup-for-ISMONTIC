@@ -36,7 +36,7 @@ export function StagiaireElearning() {
 
   const recentCourses = [
     {
-      title: 'Introduction à Java',
+      title: 'Introduction à JS',
       progress: 75,
       lastAccess: 'Il y a 2 heures',
     },

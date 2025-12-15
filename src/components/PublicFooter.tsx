@@ -9,7 +9,7 @@ export function PublicFooter() {
           <div>
             <h3 className="text-gray-900 dark:text-white mb-4">ISMONTIC</h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              Institut Spécialisé de Monétique, Informatique et Techniques de Communication
+              Institut Spécialisé des Métiers de l'Offshoring et des Nouvelles Technologies de l'Information.
             </p>
           </div>
 
@@ -28,15 +28,15 @@ export function PublicFooter() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                +212 5XX-XXXXXX
+                +212 539-380871
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                contact@ismontic.ma
+                ismontictanger.ofppt@gmail.ma
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                Casablanca, Maroc
+                Tanger, Maroc
               </li>
             </ul>
           </div>

@@ -30,8 +30,8 @@ export function StagiaireProfile() {
   const [profileVisibility, setProfileVisibility] = useState(true);
 
   // Champs éditables
-  const [adresse, setAdresse] = useState('123 Rue Mohamed V, Casablanca');
-  const [email, setEmail] = useState(user?.email || 'ahmed.bennani@example.com');
+  const [adresse, setAdresse] = useState('10 COMPT JIWAR IMM.A10 ET.6 N.121 TANGER');
+  const [email, setEmail] = useState(user?.email || 'zaid.saousaou@example.com');
   const [telephone, setTelephone] = useState('+212 6 12 34 56 78');
   const [telephoneUrgence, setTelephoneUrgence] = useState('+212 6 98 76 54 32');
   const [currentPassword, setCurrentPassword] = useState('');
@@ -39,15 +39,15 @@ export function StagiaireProfile() {
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const studentInfo = {
-    cef: 'R123456789',
-    cin: 'AB123456',
-    dateNaissance: '15/03/2002',
-    lieuNaissance: 'Casablanca',
+    cef: '200051400448',
+    cin: 'KB223621',
+    dateNaissance: '14/05/2001',
+    lieuNaissance: 'Tanger',
     filiere: 'Technicien Spécialisé en Développement Digital',
     niveau: '2ème année',
-    groupe: 'TDD202',
-    dateInscription: '01/09/2023',
-    anneeScolaire: '2024/2025',
+    groupe: 'DEVWOFS201',
+    dateInscription: '01/09/2024',
+    anneeScolaire: '2025/2026',
   };
 
   const academicStats = [
@@ -310,7 +310,7 @@ export function StagiaireProfile() {
                     Technicien Spécialisé en Développement Digital
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
-                    Septembre 2024 - En cours
+                    Septembre 2025 - En cours
                   </p>
                 </div>
               </div>
@@ -326,7 +326,7 @@ export function StagiaireProfile() {
                     Technicien Spécialisé en Développement Digital
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
-                    Septembre 2023 - Juin 2024
+                    Septembre 2024 - Juin 2025
                   </p>
                   <Badge className="mt-2 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                     Moyenne: 14.8/20

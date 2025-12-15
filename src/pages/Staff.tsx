@@ -7,70 +7,76 @@ import { Mail } from 'lucide-react';
 export function Staff() {
   const direction = [
     {
-      name: 'Dr. Hassan Alami',
-      role: 'Directeur',
-      email: 'h.alami@ismontic.ma',
-      initials: 'HA',
+      name: 'M. Abdelhamid EL MECHRAFI',
+      role: 'Directeur du Complexe',
+      email: 'a.mechrafi@ismontic.ma',
+      initials: 'AM',
     },
     {
-      name: 'Mme. Souad Bennis',
-      role: 'Directrice Pédagogique',
-      email: 's.bennis@ismontic.ma',
-      initials: 'SB',
+      name: 'M. Saad ALILOU',
+      role: 'Directeur Pédagogique',
+      email: 's.alilou@ismontic.ma',
+      initials: 'SA',
     },
   ];
 
   const formateurs = [
     {
-      name: 'Prof. Samira El Amrani',
+      name: 'Prof. Mounia NAAMANY',
       specialite: 'Base de données',
-      email: 's.elamrani@ismontic.ma',
-      initials: 'SE',
+      email: 'm.naamany@ismontic.ma',
+      initials: 'MN',
     },
     {
-      name: 'Prof. Karim Idrissi',
+      name: 'Prof. Bouchra EL AKEL',
       specialite: 'Développement Web',
-      email: 'k.idrissi@ismontic.ma',
-      initials: 'KI',
+      email: 'b.elakel@ismontic.ma',
+      initials: 'BA',
     },
     {
-      name: 'Prof. Ahmed Bennani',
+      name: 'Prof. Youssef YAZIDI EL ALAOUI',
       specialite: 'Programmation Java',
-      email: 'a.bennani@ismontic.ma',
+      email: 'y.yazidialaoui@ismontic.ma',
+      initials: 'YA',
+    },
+    {
+      name: 'Prof. Anas BOUYBANINE',
+      specialite: 'Réseaux informatiques',
+      email: 'a.bouybanine@ismontic.ma',
       initials: 'AB',
     },
     {
-      name: 'Prof. Fatima Alaoui',
-      specialite: 'Réseaux informatiques',
-      email: 'f.alaoui@ismontic.ma',
-      initials: 'FA',
-    },
-    {
-      name: 'Prof. Mohammed Tazi',
+      name: 'Prof. Amal RIAD',
       specialite: 'Sécurité informatique',
-      email: 'm.tazi@ismontic.ma',
-      initials: 'MT',
+      email: 'a.riad@ismontic.ma',
+      initials: 'AR',
     },
     {
-      name: 'Prof. Sarah Smith',
+      name: 'Prof. Othmane GUEDDALI',
       specialite: 'Anglais technique',
-      email: 's.smith@ismontic.ma',
-      initials: 'SS',
+      email: 'o.gueddali@ismontic.ma',
+      initials: 'OG',
     },
   ];
 
   const administration = [
     {
-      name: 'Mme. Nadia Rachidi',
+      name: 'Mme. Hajiba AYADI',
       role: 'Responsable Administrative',
-      email: 'n.rachidi@ismontic.ma',
-      initials: 'NR',
+      email: 'h.ayadi@ismontic.ma',
+      initials: 'HA',
     },
     {
-      name: 'M. Omar Khalil',
-      role: 'Responsable Scolarité',
-      email: 'o.khalil@ismontic.ma',
-      initials: 'OK',
+      name: 'M. Abdelmottalib SADIK',
+      role: 'Gestionnaire des Stagiaires',
+      email: 'a.sadik@ismontic.ma',
+      initials: 'AS',
+    },
+    {
+      name: 'M. Abdellah MESSLOUHI',
+      role: "Conseiller en Orientation",
+      email: 'a.messlouhi@ismontic.ma',
+      initials: 'AM',
     },
   ];
 
