@@ -22,14 +22,14 @@ export function FormateurAbsences() {
   const [motif, setMotif] = useState('');
 
   const students = [
-    { id: 1, name: 'Ahmed Bennani', matricule: 'ST2025001', absent: false, retard: false },
-    { id: 2, name: 'Fatima Zahra El Amrani', matricule: 'ST2025002', absent: false, retard: false },
-    { id: 3, name: 'Mohammed Alaoui', matricule: 'ST2025003', absent: false, retard: false },
-    { id: 4, name: 'Sara Idrissi', matricule: 'ST2025004', absent: false, retard: false },
-    { id: 5, name: 'Youssef Bennani', matricule: 'ST2025005', absent: false, retard: false },
-    { id: 6, name: 'Amina Khalil', matricule: 'ST2025006', absent: false, retard: false },
-    { id: 7, name: 'Omar Tazi', matricule: 'ST2025007', absent: false, retard: false },
-    { id: 8, name: 'Nadia Rachidi', matricule: 'ST2025008', absent: false, retard: false },
+    { id: 1, name: 'Zaid Saousaou', matricule: 'ST2025001', absent: false, retard: false },
+    { id: 2, name: 'Yasmine Harroudi', matricule: 'ST2025002', absent: false, retard: false },
+    { id: 3, name: 'Aya Belghazi', matricule: 'ST2025003', absent: false, retard: false },
+    { id: 4, name: 'Oussama tkitak', matricule: 'ST2025004', absent: false, retard: false },
+    { id: 5, name: 'Anas lazar', matricule: 'ST2025005', absent: false, retard: false },
+    { id: 6, name: 'Adnan fahsi', matricule: 'ST2025006', absent: false, retard: false },
+    { id: 7, name: 'Imane tribak', matricule: 'ST2025007', absent: false, retard: false },
+    { id: 8, name: 'Amal ettaliqui', matricule: 'ST2025008', absent: false, retard: false },
   ];
 
   const [studentStatuses, setStudentStatuses] = useState(
@@ -73,8 +73,8 @@ export function FormateurAbsences() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="web">Développement Web Avancé</SelectItem>
-                <SelectItem value="java">Programmation Java</SelectItem>
-                <SelectItem value="tp">TP Programmation</SelectItem>
+                <SelectItem value="java">Programmation JavaScript</SelectItem>
+                <SelectItem value="tp">Approche agile</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -86,9 +86,9 @@ export function FormateurAbsences() {
                 <SelectValue placeholder="Sélectionnez un groupe" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="dd101">DD101</SelectItem>
-                <SelectItem value="dd102">DD102</SelectItem>
-                <SelectItem value="id101">ID101</SelectItem>
+                <SelectItem value="dd201">DEVOWFS201</SelectItem>
+                <SelectItem value="dd202">DEVOWFS202</SelectItem>
+                <SelectItem value="id201">ID201</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -110,10 +110,10 @@ export function FormateurAbsences() {
                 <SelectValue placeholder="Sélectionnez l'horaire" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="8-10">08:30 - 10:30</SelectItem>
-                <SelectItem value="10-12">10:45 - 12:45</SelectItem>
-                <SelectItem value="14-16">14:00 - 16:00</SelectItem>
-                <SelectItem value="16-18">16:15 - 18:15</SelectItem>
+                <SelectItem value="8-10">08:30 - 10:50</SelectItem>
+                <SelectItem value="10-12">11:05 - 13:20</SelectItem>
+                <SelectItem value="14-16">13:30 - 15:50</SelectItem>
+                <SelectItem value="16-18">16:05 - 18:30</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -148,20 +148,20 @@ export function FormateurAbsences() {
                     {student.name}
                   </td>
                   <td className="py-3 px-4 text-center">
-                    <Checkbox
-                      checked={student.absent}
-                      onCheckedChange={(checked) =>
-                        handleAbsenceChange(student.id, checked as boolean)
-                      }
-                    />
-                  </td>
-                  <td className="py-3 px-4 text-center">
-                    <Checkbox
-                      checked={student.retard}
-                      onCheckedChange={(checked) =>
-                        handleRetardChange(student.id, checked as boolean)
-                      }
-                    />
+                    
+                  <Checkbox
+                    checked={student.absent}
+                    onCheckedChange={(checked: boolean) => 
+                    handleAbsenceChange(student.id, checked)
+                    }
+                  />
+
+                  <Checkbox
+                    checked={student.retard}
+                    onCheckedChange={(checked: boolean) => 
+                    handleRetardChange(student.id, checked)
+                          }
+                  />
                   </td>
                 </tr>
               ))}

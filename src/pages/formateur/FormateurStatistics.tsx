@@ -114,18 +114,18 @@ export function FormateurStatistics() {
 
   // Meilleurs étudiants
   const topStudents = [
-    { name: 'Oussama tkitak', moyenne: 18.5, groupe: 'TDD201' },
-    { name: ' Anas lazar', moyenne: 17.8, groupe: 'TDD202' },
-    { name: 'Fatima Zahra', moyenne: 17.2, groupe: 'TDD201' },
-    { name: 'Omar Mansouri', moyenne: 16.9, groupe: 'TDD203' },
-    { name: 'Aisha El Fassi', moyenne: 16.5, groupe: 'TDD202' },
+    { name: 'Zaid Saousaou', moyenne: 18.5, groupe: 'DEVOWFS201' },
+    { name: 'Yasmine Harroudi', moyenne: 17.8, groupe: 'DEVOWFS201' },
+    { name: 'Aya Belghazi', moyenne: 17.2, groupe: 'DEVOWFS201' },
+    { name: 'Oussama tkitak', moyenne: 16.9, groupe: 'DEVOWFS203' },
+    { name: 'Adnan fahsi', moyenne: 16.5, groupe: 'DEVOWFS202' },
   ];
 
   // Étudiants en difficulté
   const strugglingStudents = [
-    { name: 'Ahmed Tazi', moyenne: 8.2, absences: 12, groupe: 'TDD203' },
-    { name: 'Karim Idrissi', moyenne: 9.1, absences: 8, groupe: 'TDD201' },
-    { name: 'Nadia Hakim', moyenne: 9.8, absences: 15, groupe: 'TDD202' },
+    { name: 'Anas lazar', moyenne: 8.2, absences: 12, groupe: 'DEVOWFS203' },
+    { name: 'Amal ettaliqui', moyenne: 9.1, absences: 8, groupe: 'DEVOWFS201' },
+    { name: 'Imane tribak', moyenne: 9.8, absences: 15, groupe: 'DEVOWFS202' },
   ];
 
   return (
@@ -160,9 +160,9 @@ export function FormateurStatistics() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Tous les groupes</SelectItem>
-                <SelectItem value="TDD201">TDD201</SelectItem>
-                <SelectItem value="TDD202">TDD202</SelectItem>
-                <SelectItem value="TDD203">TDD203</SelectItem>
+                <SelectItem value="DEVOWFS201">DEVOWFS201</SelectItem>
+                <SelectItem value="DEVOWFS202">DEVOWFS202</SelectItem>
+                <SelectItem value="DEVOWFS203">DEVOWFS203</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -176,7 +176,7 @@ export function FormateurStatistics() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Tous les modules</SelectItem>
-                <SelectItem value="java">Programmation Java</SelectItem>
+                <SelectItem value="java">Programmation Javascript</SelectItem>
                 <SelectItem value="web">Développement Web</SelectItem>
                 <SelectItem value="bdd">Base de données</SelectItem>
                 <SelectItem value="reseau">Réseaux</SelectItem>
@@ -475,7 +475,7 @@ export function FormateurStatistics() {
           <div className="space-y-3">
             {[
               { module: 'Développement Web', moyenne: 15.8 },
-              { module: 'Programmation Java', moyenne: 14.9 },
+              { module: 'Programmation Javascript', moyenne: 14.9 },
               { module: 'Gestion de projet', moyenne: 14.5 },
             ].map((item, index) => (
               <div

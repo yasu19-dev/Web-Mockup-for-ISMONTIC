@@ -34,12 +34,12 @@ export function FormateurProfile() {
   const [profileVisibility, setProfileVisibility] = useState(true);
 
   // Champs éditables
-  const [adresse, setAdresse] = useState('456 Avenue Hassan II, Casablanca');
-  const [email, setEmail] = useState(user?.email || 'samira.elamrani@ismontic.ma');
+  const [adresse, setAdresse] = useState('Route Principale de Rabat à côté du Marjane,Tanger');
+  const [email, setEmail] = useState(user?.email || 'mounia naamany@ismontic.ma');
   const [telephone, setTelephone] = useState('+212 6 23 45 67 89');
   const [telephoneUrgence, setTelephoneUrgence] = useState('+212 5 22 12 34 56');
   const [bio, setBio] = useState(
-    "Formatrice passionnée avec 10 ans d'expérience dans l'enseignement du développement web et mobile. Spécialisée en Java, JavaScript et frameworks modernes."
+    "Formatrice passionnée avec 14 ans d'expérience dans l'enseignement du développement web et mobile. Spécialisée en Java, JavaScript et frameworks modernes."
   );
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -48,41 +48,41 @@ export function FormateurProfile() {
   const formateurInfo = {
     matricule: 'F2015042',
     cin: 'CD987654',
-    dateNaissance: '12/08/1985',
-    lieuNaissance: 'Rabat',
+    dateNaissance: '12/11/1985',
+    lieuNaissance: 'Tanger',
     specialite: 'Développement Web & Mobile',
     grade: 'Formatrice Principale',
-    dateRecrutement: '15/09/2015',
-    departement: 'Technologies de l\'Information',
+    dateRecrutement: '15/09/2000',
+    departement: 'Développement Digital',
   };
 
   const modulesEnseignes = [
     {
       nom: 'Développement Web Avancé',
-      code: 'DWA301',
-      groupes: ['TDD201', 'TDD202'],
+      code: 'DWA201',
+      groupes: ['DEVOWFS201', 'DEVOWFS202'],
       heures: 120,
       niveau: '2ème année',
     },
     {
-      nom: 'Programmation Java',
+      nom: 'Programmation Javascript',
       code: 'PJV101',
-      groupes: ['TDD201'],
+      groupes: ['DEV103','DEV104'],
       heures: 90,
       niveau: '1ère année',
     },
     {
       nom: 'Frameworks JavaScript',
       code: 'FJS302',
-      groupes: ['TDD202', 'TDD203'],
+      groupes: ['DEVOWFS201', 'DEVOWFS202','DEVOWFS203'],
       heures: 100,
       niveau: '2ème année',
     },
     {
-      nom: 'Développement Mobile',
+      nom: 'Développement  back-end',
       code: 'DMB201',
-      groupes: ['TDD203'],
-      heures: 80,
+      groupes: ['DEVOWFS201'],
+      heures: 110,
       niveau: '2ème année',
     },
   ];
@@ -366,7 +366,7 @@ export function FormateurProfile() {
               </div>
               <div className="space-y-2">
                 <Label>Ancienneté</Label>
-                <Input value="9 ans" disabled readOnly />
+                <Input value=" 14 ans" disabled readOnly />
               </div>
             </div>
           </Card>
@@ -422,7 +422,7 @@ export function FormateurProfile() {
         {/* Modules enseignés */}
         <TabsContent value="modules" className="space-y-4">
           <Card className="p-6">
-            <h3 className="text-gray-900 dark:text-white mb-6">Modules enseignés (2024/2025)</h3>
+            <h3 className="text-gray-900 dark:text-white mb-6">Modules enseignés (2025/2026)</h3>
             <div className="space-y-4">
               {modulesEnseignes.map((module, index) => (
                 <div
@@ -490,7 +490,7 @@ export function FormateurProfile() {
                     Total volume horaire annuel
                   </p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Année scolaire 2024/2025
+                    Année scolaire 2025/2026
                   </p>
                 </div>
                 <p className="text-2xl text-[#1E88E5]">
