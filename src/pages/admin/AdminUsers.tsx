@@ -35,7 +35,7 @@ export function AdminUsers() {
   const users = [
     {
       id: 1,
-      name: 'Ahmed Bennani',
+      name: 'Youssef Yazidi Alaoui',
       email: 'ahmed.bennani@ismontic.ma',
       role: 'Stagiaire',
       status: 'Actif',
