@@ -87,7 +87,7 @@ export function AdminAbsenceStats() {
 
   // Absences par filière
   const absencesParFiliere = [
-    { filiere: 'TDD', absences: 145, taux: 15.2 },
+    { filiere: 'TDD', absences: 170, taux: 15.2 },
     { filiere: 'TRI', absences: 98, taux: 12.8 },
     { filiere: 'TSGE', absences: 67, taux: 10.1 },
     { filiere: 'TMSIRI', absences: 32, taux: 8.9 },
