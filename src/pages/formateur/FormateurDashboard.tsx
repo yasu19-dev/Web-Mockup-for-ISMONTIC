@@ -8,22 +8,22 @@ export function FormateurDashboard() {
   const upcomingClasses = [
     {
       module: 'Développement Web Avancé',
-      groupe: 'DD101',
-      time: '10:00 - 12:00',
-      room: 'Salle A203',
+      groupe: 'DEVOWFS201',
+      time: '08:00 - 13:30',
+      room: 'SDD1',
     },
     {
-      module: 'Programmation Java',
-      groupe: 'DD102',
-      time: '14:00 - 16:00',
-      room: 'Lab 1',
+      module: 'Programmation JavaScript',
+      groupe: 'DEVOWFS202',
+      time: '13:30 - 18:30',
+      room: 'SDD2',
     },
   ];
 
   const recentAbsences = [
-    { student: 'Ahmed Bennani', groupe: 'DD101', date: 'Aujourd\'hui', status: 'Absence' },
-    { student: 'Fatima Zahra', groupe: 'DD101', date: 'Aujourd\'hui', status: 'Retard' },
-    { student: 'Mohammed Alaoui', groupe: 'DD102', date: 'Hier', status: 'Absence' },
+    { student: 'Zaid Saousaou', groupe: 'DEVOWFS201', date: 'Aujourd\'hui', status: 'Absence' },
+    { student: 'Yasmine Harroudi', groupe: 'DEVOWFS201', date: 'Aujourd\'hui', status: 'Retard' },
+    { student: 'Aya Belghazi', groupe: 'DEVOWFS202', date: 'Hier', status: 'Absence' },
   ];
 
   return (
@@ -138,8 +138,8 @@ export function FormateurDashboard() {
         <div className="grid md:grid-cols-3 gap-4">
           {[
             { name: 'Développement Web Avancé', students: 25, color: '#1E88E5' },
-            { name: 'Programmation Java', students: 20, color: '#00C9A7' },
-            { name: 'TP Programmation', students: 25, color: '#9C27B0' },
+            { name: 'Programmation JavaScript', students: 20, color: '#00C9A7' },
+            { name: 'Approche agile', students: 25, color: '#9C27B0' },
           ].map((module, index) => (
             <div
               key={index}
