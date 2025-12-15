@@ -87,10 +87,9 @@ export function AdminAbsenceStats() {
 
   // Absences par filière
   const absencesParFiliere = [
-    { filiere: 'TDD', absences: 170, taux: 15.2 },
-    { filiere: 'TRI', absences: 98, taux: 12.8 },
-    { filiere: 'TSGE', absences: 67, taux: 10.1 },
-    { filiere: 'TMSIRI', absences: 32, taux: 8.9 },
+    { filiere: 'DD', absences: 170, taux: 15.2 },
+    { filiere: 'ID', absences: 98, taux: 12.8 },
+    { filiere: 'Info', absences: 67, taux: 10.1 },
   ];
 
   // Répartition des types d'absences
@@ -122,37 +121,37 @@ export function AdminAbsenceStats() {
   // Top étudiants absents
   const topAbsents = [
     {
-      name: 'Ahmed Tazi',
-      filiere: 'TDD',
-      groupe: 'TDD201',
+      name: 'Imane TRIBAK',
+      filiere: 'DD',
+      groupe: 'DEVWOFS201',
       absences: 28,
       justifiees: 8,
     },
     {
-      name: 'Karim Idrissi',
-      filiere: 'TDD',
-      groupe: 'TDD202',
+      name: 'Oussama TKITAK',
+      filiere: 'DD',
+      groupe: 'DEVWOFS202',
       absences: 24,
       justifiees: 5,
     },
     {
-      name: 'Nadia Hakim',
-      filiere: 'TRI',
-      groupe: 'TRI101',
+      name: 'IHsane MOTICH',
+      filiere: 'ID',
+      groupe: 'ID202',
       absences: 22,
       justifiees: 12,
     },
     {
-      name: 'Youssef Alami',
-      filiere: 'TDD',
-      groupe: 'TDD203',
+      name: 'Taha ROUGUI',
+      filiere: 'Info',
+      groupe: 'INFO201',
       absences: 19,
       justifiees: 3,
     },
     {
-      name: 'Sara Benali',
-      filiere: 'TSGE',
-      groupe: 'TSGE101',
+      name: 'Hanae SENHAYI',
+      filiere: 'DD',
+      groupe: 'DEVWOFS205',
       absences: 17,
       justifiees: 10,
     },
@@ -160,11 +159,11 @@ export function AdminAbsenceStats() {
 
   // Modules avec plus d'absences
   const modulesAbsences = [
-    { module: 'Mathématiques', absences: 78, formateur: 'M. Alaoui' },
-    { module: 'Réseaux', absences: 65, formateur: 'Mme. Benjelloun' },
-    { module: 'Programmation C', absences: 58, formateur: 'M. El Fassi' },
-    { module: 'Base de données', absences: 52, formateur: 'Mme. Idrissi' },
-    { module: 'Anglais', absences: 48, formateur: 'Mme. Mansouri' },
+    { module: 'Javascript', absences: 78, formateur: 'Mme. NAAMANY' },
+    { module: 'Réseaux', absences: 65, formateur: 'M. BOUYBANINE' },
+    { module: 'POO', absences: 58, formateur: 'Mme. RIAD' },
+    { module: 'Base de données', absences: 52, formateur: 'Mme. EL AKEL' },
+    { module: 'Anglais', absences: 48, formateur: 'M. GUEDDALII' },
   ];
 
   return (
@@ -207,10 +206,9 @@ export function AdminAbsenceStats() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Toutes les filières</SelectItem>
-                <SelectItem value="TDD">TDD</SelectItem>
-                <SelectItem value="TRI">TRI</SelectItem>
-                <SelectItem value="TSGE">TSGE</SelectItem>
-                <SelectItem value="TMSIRI">TMSIRI</SelectItem>
+                <SelectItem value="DD">DD</SelectItem>
+                <SelectItem value="ID">ID</SelectItem>
+                <SelectItem value="Info">Infographie</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -224,9 +222,11 @@ export function AdminAbsenceStats() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">Tous les groupes</SelectItem>
-                <SelectItem value="TDD201">TDD201</SelectItem>
-                <SelectItem value="TDD202">TDD202</SelectItem>
-                <SelectItem value="TDD203">TDD203</SelectItem>
+                <SelectItem value="DD201">DEVWOFS201</SelectItem>
+                <SelectItem value="DD202">DEVWOFS202</SelectItem>
+                <SelectItem value="DD203">DEVWOFS203</SelectItem>
+                <SelectItem value="DD204">DEVWOFS204</SelectItem>
+                <SelectItem value="DD205">DEVWOFS205</SelectItem>
               </SelectContent>
             </Select>
           </div>

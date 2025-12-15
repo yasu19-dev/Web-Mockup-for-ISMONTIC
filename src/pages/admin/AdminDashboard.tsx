@@ -5,13 +5,13 @@ import { Badge } from '../../components/ui/badge';
 
 export function AdminDashboard() {
   const recentAttestations = [
-    { student: 'Ahmed Bennani', type: 'Scolarité', status: 'En attente', date: 'Il y a 2h' },
-    { student: 'Fatima Zahra', type: 'Stage', status: 'Validée', date: 'Il y a 5h' },
-    { student: 'Mohammed Alaoui', type: 'Notes', status: 'Livrée', date: 'Hier' },
+    { student: 'Zaid SAOUSAOU', type: 'Scolarité', status: 'En attente', date: 'Il y a 2h' },
+    { student: 'Yamine HARROUDI', type: 'Stage', status: 'Validée', date: 'Il y a 5h' },
+    { student: 'Aya BELGHAZI', type: 'Notes', status: 'Livrée', date: 'Hier' },
   ];
 
   const alerts = [
-    { message: 'DD101: Taux d\'absence supérieur à 15%', severity: 'high' },
+    { message: 'ID202: Taux d\'absence supérieur à 15%', severity: 'high' },
     { message: '8 demandes d\'attestations en attente', severity: 'medium' },
     { message: 'Backup système effectué avec succès', severity: 'low' },
   ];
@@ -133,7 +133,7 @@ export function AdminDashboard() {
           {[
             { name: 'Développement Digital', students: 120, absences: '7.2%', color: '#1E88E5' },
             { name: 'Infrastructure Digitale', students: 95, absences: '9.5%', color: '#00C9A7' },
-            { name: 'Monétique', students: 80, absences: '8.8%', color: '#9C27B0' },
+            { name: 'Infographie', students: 80, absences: '8.8%', color: '#9C27B0' },
           ].map((filiere, index) => (
             <div
               key={index}
@@ -169,19 +169,19 @@ export function AdminDashboard() {
             {
               icon: CheckCircle,
               color: '#00C9A7',
-              text: 'Attestation validée pour Ahmed Bennani',
+              text: 'Attestation validée pour Zaid SAOUSAOU',
               time: 'Il y a 10 min',
             },
             {
               icon: Users,
               color: '#1E88E5',
-              text: 'Nouvel utilisateur créé: Sara Idrissi',
+              text: 'Nouvel utilisateur créé: Oussama TKITAK',
               time: 'Il y a 30 min',
             },
             {
               icon: Clock,
               color: '#FF9800',
-              text: 'Séance d\'absences enregistrée par Prof. El Amrani',
+              text: 'Séance d\'absences enregistrée par Prof. NAAMANY',
               time: 'Il y a 1h',
             },
             {

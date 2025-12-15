@@ -773,7 +773,7 @@ export function AdminSettings() {
                       Téléphone
                     </p>
                     <p className="text-sm text-gray-900 dark:text-white">
-                      +212 5 22 XX XX XX
+                      +212 5 39 39 49 49
                     </p>
                   </div>
                 </div>

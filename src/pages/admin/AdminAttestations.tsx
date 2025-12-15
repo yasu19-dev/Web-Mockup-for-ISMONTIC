@@ -28,7 +28,7 @@ export function AdminAttestations() {
   const attestations = [
     {
       id: 'ATT-2025-001',
-      student: 'Ahmed Bennani',
+      student: 'Zaid SAOUSAOU',
       matricule: 'ST2025001',
       type: 'Attestation de scolarité',
       date: '2025-03-05',
@@ -38,7 +38,7 @@ export function AdminAttestations() {
     },
     {
       id: 'ATT-2025-002',
-      student: 'Fatima Zahra El Amrani',
+      student: 'Yasmine HARROUDI',
       matricule: 'ST2025002',
       type: 'Attestation de stage',
       date: '2025-03-04',
@@ -48,7 +48,7 @@ export function AdminAttestations() {
     },
     {
       id: 'ATT-2025-003',
-      student: 'Mohammed Alaoui',
+      student: 'Aya BELGHAZI',
       matricule: 'ST2025003',
       type: 'Relevé de notes',
       date: '2025-03-03',
@@ -58,7 +58,7 @@ export function AdminAttestations() {
     },
     {
       id: 'ATT-2025-004',
-      student: 'Sara Idrissi',
+      student: 'Oussama TKITAK',
       matricule: 'ST2025004',
       type: 'Attestation de scolarité',
       date: '2025-03-02',
@@ -68,7 +68,7 @@ export function AdminAttestations() {
     },
     {
       id: 'ATT-2025-005',
-      student: 'Youssef Bennani',
+      student: 'Anas LAZAR',
       matricule: 'ST2025005',
       type: 'Attestation de stage',
       date: '2025-03-01',
