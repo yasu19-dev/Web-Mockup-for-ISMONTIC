@@ -37,7 +37,7 @@ import { AdminUsers } from './pages/admin/AdminUsers';
 import { AdminAbsenceStats } from './pages/admin/AdminAbsenceStats';
 import { AdminSettings } from './pages/admin/AdminSettings';
 
-function DashboardLayout({ children }: { children: React.ReactNode }) {
+function DashboardLayout({ children }) {
   return (
     <div className="flex min-h-screen bg-gray-50 dark:bg-[#141820]">
       <DashboardSidebar />
@@ -51,20 +51,14 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
   );
 }
 
-function ProtectedRoute({
-  children,
-  allowedRoles,
-}: {
-  children: React.ReactNode;
-  allowedRoles: string[];
-}) {
+function ProtectedRoute({ children, allowedRoles }) {
   const { user } = useAuth();
 
   if (!user) {
     return <Navigate to="/login" replace />;
   }
 
-  if (!allowedRoles.includes(user.role!)) {
+  if (!allowedRoles.includes(user.role)) {
     return <Navigate to="/" replace />;
   }
 

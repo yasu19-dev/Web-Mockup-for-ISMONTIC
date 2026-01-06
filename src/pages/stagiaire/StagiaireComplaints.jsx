@@ -51,7 +51,8 @@ export function StagiaireComplaints() {
     },
   ];
 
-  const getStatusColor = (status: string) => {
+  // Suppression du type :string
+  const getStatusColor = (status) => {
     switch (status) {
       case 'Résolu':
         return 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400';
@@ -64,7 +65,8 @@ export function StagiaireComplaints() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Suppression du type :React.FormEvent
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Logique d'envoi
     alert('Réclamation envoyée avec succès!');

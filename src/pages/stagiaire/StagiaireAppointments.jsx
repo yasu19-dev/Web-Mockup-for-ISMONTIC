@@ -15,7 +15,8 @@ import { CalendarCheck, Clock, FileText, CheckCircle } from 'lucide-react';
 export function StagiaireAppointments() {
   const [step, setStep] = useState(1);
   const [service, setService] = useState('');
-  const [date, setDate] = useState<Date | undefined>(new Date());
+  // Suppression de l'annotation de type <Date | undefined>
+  const [date, setDate] = useState(new Date());
   const [timeSlot, setTimeSlot] = useState('');
 
   const services = [

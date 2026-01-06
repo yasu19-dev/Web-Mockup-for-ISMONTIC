@@ -1,3 +1,4 @@
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
@@ -30,19 +31,22 @@ export function Home() {
       title: 'Rentrée Académique 2025/2026',
       date: '06 Septembre 2025',
       description: 'Les inscriptions pour la nouvelle année académique sont maintenant ouvertes.',
-      image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2MjQ0NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080',
+      // image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc2MjQ0NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/images/actualites/1.jpg',
     },
     {
       title: 'Journée Portes Ouvertes',
       date: '20 Mars 2025',
       description: 'Venez découvrir nos formations et rencontrer notre équipe pédagogique.',
-      image: 'https://images.unsplash.com/photo-1762329386486-f38ef2077a06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlZHVjYXRpb24lMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MjUyMzIyOXww&ixlib=rb-4.1.0&q=80&w=1080',
+      // image: 'https://images.unsplash.com/photo-1762329386486-f38ef2077a06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlZHVjYXRpb24lMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MjUyMzIyOXww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/images/actualites/2.jpg',
     },
     {
       title: 'Partenariat avec le Secteur Privé',
       date: '10 Mars 2025',
       description: 'Nouveaux accords de partenariat pour stages et emplois de nos diplômés.',
-      image: 'https://images.unsplash.com/photo-1758813240178-19ef760ded2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwxfHx8fDE3NjI1MzA3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      // image: 'https://images.unsplash.com/photo-1758813240178-19ef760ded2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwxfHx8fDE3NjI1MzA3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/images/actualites/3.jpg',
     },
   ];
 
@@ -89,12 +93,12 @@ export function Home() {
             <div>
               <h2 className="text-gray-900 dark:text-white mb-6">À propos de l'ISMONTIC</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                L'ISMONTIC est un établissement de formation professionnelle spécialisé dans les métiers de l'offshoring 
-                et des nouvelles technologies de l'information. Notre mission est de préparer les stagiaires à réussir 
+                L'ISMONTIC est un établissement de formation professionnelle spécialisé dans les métiers de l'offshoring
+                et des nouvelles technologies de l'information. Notre mission est de préparer les stagiaires à réussir
                 dans un environnement technologique en constante évolution.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Nous offrons des formations de qualité, encadrées par des professionnels du secteur, 
+                Nous offrons des formations de qualité, encadrées par des professionnels du secteur,
                 avec des équipements modernes et des méthodes pédagogiques innovantes.
               </p>
               <div className="grid grid-cols-3 gap-4">
@@ -117,9 +121,9 @@ export function Home() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <ImageWithFallback
-              src="/unnamed.webp"   
-              alt="ISMONTIC Campus"
-              className="w-full h-full object-cover"
+                src="/unnamed.webp"
+                alt="ISMONTIC Campus"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -145,6 +149,7 @@ export function Home() {
                 <p className="text-sm text-[#00C9A7] mb-3">{filiere.duration}</p>
                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                   {filiere.description}
+                  
                 </p>
                 <Button variant="ghost" className="w-full" asChild>
                   <Link to="/filieres">

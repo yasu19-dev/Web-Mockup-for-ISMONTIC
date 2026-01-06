@@ -20,9 +20,9 @@ export function Login() {
   const { login } = useAuth();
   const { theme, toggleTheme } = useTheme();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const role = activeTab as 'stagiaire' | 'formateur' | 'admin';
+    const role = activeTab;
     login(email, password, role);
     navigate(`/${role}/dashboard`);
   };

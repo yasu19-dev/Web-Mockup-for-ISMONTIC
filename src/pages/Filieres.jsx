@@ -71,7 +71,7 @@ export function Filieres() {
         'Maquettiste PAO',
         'Directeur Artistique Junior',
       ],
-      color: '#E91E63', 
+      color: '#E91E63',
     },
   ];
 

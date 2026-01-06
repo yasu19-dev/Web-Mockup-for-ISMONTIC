@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     alert('Message envoyé avec succès!');
   };
