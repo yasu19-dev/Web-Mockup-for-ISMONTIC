@@ -5,26 +5,15 @@ import React, {
   useEffect,
 } from "react";
 
-type Theme = "light" | "dark";
+// Création du contexte sans typage générique
+const ThemeContext = createContext();
 
-interface ThemeContextType {
-  theme: Theme;
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<
-  ThemeContextType | undefined
->(undefined);
-
-export function ThemeProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [theme, setTheme] = useState<Theme>("light");
+export function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme;
+    // Suppression de l'assertion 'as Theme'
+    const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme);
     }
@@ -33,7 +22,7 @@ export function ThemeProvider({
   useEffect(() => {
     document.documentElement.classList.toggle(
       "dark",
-      theme === "dark",
+      theme === "dark"
     );
     localStorage.setItem("theme", theme);
   }, [theme]);
@@ -53,7 +42,7 @@ export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
     throw new Error(
-      "useTheme must be used within ThemeProvider",
+      "useTheme must be used within ThemeProvider"
     );
   }
   return context;

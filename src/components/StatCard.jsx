@@ -1,18 +1,7 @@
-import { LucideIcon } from 'lucide-react';
 import { Card } from './ui/card';
 
-interface StatCardProps {
-  title: string;
-  value: string | number;
-  icon: LucideIcon;
-  trend?: {
-    value: string;
-    isPositive: boolean;
-  };
-  color?: string;
-}
 
-export function StatCard({ title, value, icon: Icon, trend, color = '#1E88E5' }: StatCardProps) {
+export function StatCard({ title, value, icon: Icon, trend, color = '#1E88E5' }) {
   return (
     <Card className="p-6">
       <div className="flex items-start justify-between">

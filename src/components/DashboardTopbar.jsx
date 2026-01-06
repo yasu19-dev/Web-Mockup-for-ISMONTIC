@@ -22,7 +22,11 @@ export function DashboardTopbar() {
     navigate('/');
   };
 
-  const getInitials = (name: string) => {
+  // Suppression de ': string' ici
+  const getInitials = (name) => {
+    // Petite sécurité ajoutée : si name est vide, on retourne une chaîne vide
+    if (!name) return ''; 
+    
     return name
       .split(' ')
       .map(n => n[0])
@@ -43,15 +47,6 @@ export function DashboardTopbar() {
           <Button
             variant="ghost"
             size="icon"
-            className="relative rounded-full"
-          >
-            <Bell className="w-5 h-5" />
-            <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full"></span>
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
             onClick={toggleTheme}
             className="rounded-full"
           >
@@ -60,6 +55,16 @@ export function DashboardTopbar() {
             ) : (
               <Sun className="w-5 h-5" />
             )}
+          </Button>
+          
+          {/* Le bouton cloche des notifications */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="relative rounded-full"
+          >
+            <Bell className="w-5 h-5" />
+            <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full"></span>
           </Button>
 
           <DropdownMenu>

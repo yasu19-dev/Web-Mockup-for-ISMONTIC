@@ -64,7 +64,8 @@ export function StagiaireDocuments() {
     },
   ];
 
-  const getCategoryColor = (category: string) => {
+  
+  const getCategoryColor = (category) => {
     switch (category) {
       case 'Règlement':
         return 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400';
@@ -79,7 +80,8 @@ export function StagiaireDocuments() {
     }
   };
 
-  const getFileIcon = (type: string) => {
+  
+  const getFileIcon = (type) => {
     return type === 'PDF' ? FileText : File;
   };
 
