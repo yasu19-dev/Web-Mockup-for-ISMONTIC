@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
@@ -21,7 +22,6 @@ import {
   Camera,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
-import { useState } from 'react';
 
 export function StagiaireProfile() {
   const { user } = useAuth();
